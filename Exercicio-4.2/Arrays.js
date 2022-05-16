@@ -2,14 +2,14 @@
 
 // let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
-// for(index = 0; index < numbers.length; index += 1){
+// for(let index = 0; index < numbers.length; index += 1){
 //   console.log(numbers[index]);
 // }
 
 // Exercício 2
 // let result = 0;
 
-// for(index = 0; index < numbers.length; index += 1){  
+// for(let index = 0; index < numbers.length; index += 1){  
 //   result += numbers[index];
 // }
 
@@ -33,7 +33,7 @@
 
 // let maior = 0
 
-// for(index = 0; index < numbers.length; index += 1){
+// for(let index = 0; index < numbers.length; index += 1){
 //   if (numbers[index] > maior){
 //     maior = numbers[index]
 //   } else{
@@ -45,7 +45,7 @@
 // Exercício 6 
 // let quantidadeDeNumerosImpares = 0;
 
-// for(index = 0; index < numbers.length; index +=1){
+// for(let index = 0; index < numbers.length; index +=1){
 //   if(numbers[index]%2 !== 0){
 //     quantidadeDeNumerosImpares +=1;
 //   }
@@ -60,7 +60,7 @@
 // Exercício 7
 // let menor = numbers[0];
 
-// for (index =0; index < numbers.length; index +=1){
+// for (let index =0; index < numbers.length; index +=1){
 //   if (numbers[index] < menor) {
 //     menor = numbers[index];
 //   }
@@ -72,7 +72,7 @@
 
 // let numbers = [];
 
-// for( index = 1; index <= 25; index += 1){
+// for(let index = 1; index <= 25; index += 1){
 //   numbers.push (index)
 // }
 
@@ -82,7 +82,7 @@
 
 // let metadeNumbers = [];
 
-// for( index = 0; index < numbers.length; index +=1){
+// for(index = 0; index < numbers.length; index +=1){
 //   metadeNumbers.push (numbers[index]/2)
 // }
 // console.log(metadeNumbers);
