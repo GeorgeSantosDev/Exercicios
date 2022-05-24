@@ -19,3 +19,7 @@ for (index = 0; index < a.length; index += 1){
   }
 
 }
+
+
+        let mainFather = document.querySelectorAll('.main-content');
+        console.log(mainFather);
