@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <header>
+    <h1>TrybeTrip</h1>
+  </header>
+  <main>
+    <form action="" method="get">
+    <section>
+      <label for="">Nome: <input type="text" name="nome" id="nome-completo" placeholder="Digite aqui seu nome completo"
+          min="10" max="40" required></label>
+    </section>
+    <br>
+    <section>
+      <label for="">Email: <input type="email" name="e-mail" id="email-adress" placeholder="Digite aqui seu email"
+          min="10" max="50" required></label>
+    </section>
+    <br>
+    <section>
+      <fieldset>
+        <legend>Destino Preferido</legend>
+        <label for=""> Cidade
+          <input type="radio" name="place">
+        </label>
+        <label for=""> Campo
+          <input type="radio" name="place">
+        </label>
+        <label for=""> Praia
+          <input type="radio" name="place">
+        </label>
+        <label for=""> Montanha
+          <input type="radio" name="place">
+        </label>
+      </fieldset>
+    </section>
+    <br>
+    <section>
+      <label for="">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
+        <br>
+        <textarea name="motivo" id="reason-text" cols="30" rows="10" placeholder="Responda aqui"></textarea>
+      </label>
+    </section>
+    <br>
+    <section>
+      <label for="">Qual a melhor data para realizar sua viagem?
+        <br>
+        <input type="date" nome="data" required>
+      </label>
+    </section>
+    <br>
+    <section>
+      <label for="">
+        <input type="checkbox" >
+        Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+      </label>
+      <br>
+      <label for="">
+        <input type="checkbox" id= "image" >
+        Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+      </label>
+    </section>
+    <br>
+    <section>
+      <button type="submit" id="send">Enviar</button> <button type="reset">Limpar</button>
+    </section>
+  </form>
+  </main>
+
+  <script src="form.js"></script>
+</body>
+
+</html>
