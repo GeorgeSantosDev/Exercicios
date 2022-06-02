@@ -6,4 +6,3 @@ document.querySelector('#send').addEventListener('click', function (event) {
   }
 })
 
-console.log(agreeImage.checked);

@@ -1,0 +1,11 @@
+body {
+  background-color: rgb(5, 49, 85);
+  margin: 5% auto;
+  max-width: 80%;
+}
+
+header, main {
+  background-color: aliceblue;
+  padding: 20px;
+  border-radius: 10px;
+}
