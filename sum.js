@@ -80,16 +80,79 @@ const techList = (array, string) => {
 
   const ordenedArray = array.sort();
   const arrayResult = [];
-  
-  if(array.length === 0){
+
+  if (array.length === 0) {
     return 'Vazio!'
   }
 
-  for(let tech of ordenedArray){
-    arrayResult.push({tech: tech, name: string})
+  for (let tech of ordenedArray) {
+    arrayResult.push({ tech: tech, name: string })
   }
 
   return arrayResult
 }
 
-module.exports = {sum, myRemove, myFizzBuzz, encode, decode, techList};
+const hydrate = (string) => {
+
+  const regex = /\d+/g;
+  const arrayStringNumbers = string.match(regex);
+  let sumCups = 0;
+
+  for (let number = 0; number < arrayStringNumbers.length; number += 1) {
+    sumCups += parseInt(arrayStringNumbers[number]);
+  }
+
+  if (sumCups > 1) {
+    return `${sumCups} copos de água`;
+  } else if (sumCups === 1) {
+    return `${sumCups} copo de água`;
+  }
+}
+
+// Dados
+const professionalBoard = [
+  {
+    id: '8579-6',
+    firstName: 'Ana',
+    lastName: 'Gates',
+    specialities: ['UX', 'Design'],
+  },
+  {
+    id: '5569-4',
+    firstName: 'George',
+    lastName: 'Jobs',
+    specialities: ['Frontend', 'Redux', 'React', 'CSS'],
+  },
+  {
+    id: '4456-4',
+    firstName: 'Leila',
+    lastName: 'Zuckerberg',
+    specialities: ['Context API', 'RTL', 'Bootstrap'],
+  },
+  {
+    id: '1256-4',
+    firstName: 'Linda',
+    lastName: 'Bezos',
+    specialities: ['Hooks', 'Context API', 'Tailwind CSS'],
+  },
+  {
+    id: '9852-2-2',
+    firstName: 'Jeff',
+    lastName: 'Cook',
+    specialities: ['Ruby', 'SQL'],
+  },
+  {
+    id: '4678-2',
+    firstName: 'Paul',
+    lastName: 'Dodds',
+    specialities: ['Backend'],
+  },
+];
+
+// Pesquisa
+const searchEmployee = (id, detail) => {
+
+};
+
+hydrate('1 cerveja, 4 caipirinhas');
+module.exports = { sum, myRemove, myFizzBuzz, encode, decode, techList, hydrate,searchEmployee};
