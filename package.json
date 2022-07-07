@@ -1,0 +1,23 @@
+{
+  "name": "exercicios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "exercise.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeorgeSantosDev/Exercicios.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GeorgeSantosDev/Exercicios/issues"
+  },
+  "homepage": "https://github.com/GeorgeSantosDev/Exercicios#readme",
+  "devDependencies": {
+    "jest": "^28.1.2"
+  }
+}
