@@ -132,7 +132,6 @@ const pokemons = [
   },
 ];
 
-
 function getPokemonDetails(filter, callback) {
   setTimeout(() => {
     if (pokemons.find(filter) === undefined) {
@@ -148,7 +147,13 @@ function getPokemonDetails(filter, callback) {
   }, 2000);
 }
 
-getPokemonDetails();
+getPokemonDetails((pokemon) => pokemon.name === 'Quilava', (param1, param2) => {
+  if (!param1) {
+    console.log(param2);
+  } else {
+    console.log(param1);
+  }
+})
 
 module.exports = {
   getPokemonDetails,
